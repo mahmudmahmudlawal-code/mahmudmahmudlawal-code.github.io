@@ -1,0 +1,879 @@
+{
+ "profile": {
+  "name": "Mahmud Mahmud Lawal",
+  "eyebrow": "Electrical and Robotics Engineering",
+  "order": "asc",
+  "lede": "Engineer working on physics-informed machine learning for electric vehicles, with a background in embedded hardware and telecom power systems.",
+  "intro": "B.Eng. in Electrical Engineering (Ahmadu Bello University). M.Tech in Robotics Engineering in progress at Vivekananda Global University, Jaipur. About six years at IHS Towers of Strength maintaining and monitoring telecom power and network infrastructure.",
+  "education": [
+   [
+    "M.Tech, Robotics Engineering",
+    "Vivekananda Global University, Jaipur",
+    "Jan 2025 to present",
+    "8.95 / 10.00"
+   ],
+   [
+    "B.Eng., Electrical Engineering",
+    "Ahmadu Bello University, Zaria",
+    "Nov 2010 to Nov 2015",
+    "4.38 / 5.00"
+   ]
+  ],
+  "skills": [
+   [
+    "Programming",
+    "Python, PyTorch, MATLAB, Simulink, ROS1 and ROS2, C++, PLC"
+   ],
+   [
+    "Design (CAD/CAE)",
+    "AutoCAD, CATIA V5, SolidWorks, ProfiCAD"
+   ],
+   [
+    "Power and field work",
+    "AC/DC systems, rectifiers, batteries, UPS, ATS, generators, hybrid/solar"
+   ],
+   [
+    "Network monitoring",
+    "Huawei U2000, Huawei OWS/ICTOM, RMS, Affectli"
+   ]
+  ],
+  "interests": [
+   "AI and machine learning, including physics-informed methods",
+   "Robotics and intelligent control",
+   "Automation and industrial control systems",
+   "Electric vehicle technologies, energy consumption and battery state estimation",
+   "Sustainable and intelligent energy systems"
+  ],
+  "email": "mahmudmahmudlawal@gmail.com",
+  "location": "Kano, Nigeria",
+  "researchgate": "https://www.researchgate.net/profile/Mahmud-Lawal",
+  "footer": "Portfolio of Mahmud Mahmud Lawal. Every link goes to the original source. Items marked \"To be added\" have no file yet and nothing has been invented to replace them."
+ },
+ "items": [
+  {
+   "id": "door-lock",
+   "type": "project",
+   "year": 2014,
+   "period": "2014 to 2016",
+   "title": "Automatic Digital Security Door Lock System",
+   "sub": "B.Eng. thesis, Ahmadu Bello University. Supervisor: Dr. Adamu Sani. Control Lab, 2014 to 2016.",
+   "tags": [
+    "Embedded",
+    "Electrical"
+   ],
+   "summary": "PIC16F877A access control with a custom circuit and PCB.",
+   "flow": [
+    "User credentials",
+    "PIC16F877A",
+    "Access outcome"
+   ],
+   "flownote": "Conceptual block diagram. The microcontroller and multi-user authentication come from the CV. Input and actuator hardware are not named there.",
+   "body": "## Problem\nMechanical locks give no control over who may enter and no record of access. This thesis builds an electronic lock that authenticates users before granting access.\n## Objectives\n- Implement multi-user authentication and access-control logic on a microcontroller.\n- Design the electronic circuit and fabricate the printed circuit board.\n- Document the design process, schematics and testing outcomes in a final report.\n## Method\nSeveral microcontroller architectures and programming languages were evaluated. The PIC16F877A was selected and programmed. The circuit was designed and the PCB fabricated for the final system.",
+   "todo": "Implementation and testing: input device and lock actuator used, firmware flow chart, test cases and observed results, taken from the thesis.",
+   "evidence": [
+    [
+     "Thesis / technical report",
+     "",
+     "Upload the thesis PDF and add its link."
+    ],
+    [
+     "Circuit schematic and PCB layout",
+     "",
+     "Export from the design tool as PDF or PNG."
+    ],
+    [
+     "Photographs of the built unit",
+     "",
+     "Real photographs only."
+    ],
+    [
+     "Firmware source",
+     "",
+     "Publish on GitHub and add the URL."
+    ],
+    [
+     "Demonstration video",
+     "",
+     "Upload to Drive or YouTube (unlisted)."
+    ]
+   ],
+   "featured": true
+  },
+  {
+   "id": "ev-energy",
+   "type": "project",
+   "year": 2025,
+   "period": "Aug 2025 to Aug 2026",
+   "title": "Hybrid Physics-Informed ML for EV Energy Consumption",
+   "sub": "M.Tech thesis, Vivekananda Global University. Supervisor: Dr. Mukesh Sharma. Simulation and Software Lab, Aug 2025 to Aug 2026.",
+   "tags": [
+    "Machine learning",
+    "Electric vehicles"
+   ],
+   "summary": "Newton-Euler dynamics with Random Forest and XGBoost residual correction.",
+   "flow": [
+    "Inputs: vehicle + 9 environmental features",
+    "Physics model: Newton-Euler",
+    "Residual correction: Random Forest / XGBoost",
+    "Hybrid estimate"
+   ],
+   "flownote": "",
+   "body": "## Problem\nElectric vehicle energy use changes with terrain, weather and other conditions. Physics-only models are interpretable but leave out effects they do not represent. Purely data-driven models can be hard to trust outside their training conditions. This thesis combines the two.\n## Methodology\n- A Newton-Euler vehicle dynamics model gives a physics-based energy estimate.\n- Random Forest and XGBoost models learn a residual correction on top of that estimate.\n- A 10,000-instance synthetic dataset, engineered across nine environmental and geographical features, supports controlled evaluation.\n## Reported result\nThe CV reports a 98% RMSE reduction over the physics-only baseline. The dataset is synthetic, so this shows a controlled comparison, not real-world accuracy.",
+   "todo": "Feature names and ranges, data split, baseline and hybrid RMSE side by side, residual and feature-importance plots, from your own runs.",
+   "evidence": [
+    [
+     "Presentation certificate, Fourth Workshop on Applications of Computational Intelligence and Interactive Systems (Aug 2026)",
+     "https://drive.google.com/file/d/1jsu03WWpxGevULTXljqhnjlNy1_GYFvZ/view",
+     ""
+    ],
+    [
+     "Thesis / manuscript PDF",
+     "",
+     "Upload and link."
+    ],
+    [
+     "Python / PyTorch source",
+     "",
+     "Publish on GitHub with README."
+    ],
+    [
+     "Result plots",
+     "",
+     "Export from the notebook."
+    ]
+   ],
+   "featured": true
+  },
+  {
+   "id": "soc-estimation",
+   "type": "project",
+   "year": "",
+   "period": "Planned",
+   "title": "ML State-of-Charge Estimation: Cross-Cell Generalisation",
+   "sub": "Research topic: Cross-Cell Generalization of Machine-Learning State-of-Charge Estimation for Electric Vehicle Batteries.",
+   "tags": [
+    "Battery modelling",
+    "Planned"
+   ],
+   "summary": "Research question and planned pipeline. No results published yet.",
+   "flow": [
+    "LG 18650HG2: training",
+    "Preprocessing",
+    "ML SoC estimator",
+    "Panasonic 18650PF: validation",
+    "Metrics and plots"
+   ],
+   "flownote": "",
+   "body": "## Research question\nCan a machine-learning state-of-charge (SoC) estimator trained on one lithium-ion cell type stay accurate on a different cell type?\n## Planned datasets\n- **LG 18650HG2**: training and testing.\n- **Panasonic 18650PF**: cross-cell validation.\n## To document once the work exists\n- Input signals and how SoC ground truth is defined.\n- Temperatures and drive cycles in each dataset, and how they are split.\n- Models, hyperparameters and metrics on both cells.\n- Dataset sources, citations and licences.",
+   "todo": "No results yet. This page states the research question and planned pipeline only. It contains no metrics.",
+   "evidence": [
+    [
+     "Python source / notebooks",
+     "",
+     "Publish on GitHub."
+    ],
+    [
+     "Report or manuscript",
+     "",
+     "Upload PDF and link."
+    ],
+    [
+     "Metric table and plots",
+     "",
+     "Values from your own runs only."
+    ]
+   ],
+   "featured": true
+  },
+  {
+   "id": "telecom-monitoring",
+   "type": "project",
+   "year": 2018,
+   "period": "Mar 2018 to Nov 2024",
+   "title": "Telecom Power and Network Monitoring",
+   "sub": "IHS Towers of Strength, Abuja. Network Surveillance Specialist (Sep 2022 to Nov 2024); Field Support Engineer (Mar 2018 to Aug 2022).",
+   "tags": [
+    "Telecom",
+    "Operations"
+   ],
+   "summary": "Remote monitoring and field maintenance of network and power infrastructure.",
+   "flow": [
+    "Monitoring platforms",
+    "Alarm identification",
+    "Parameter checks",
+    "Fault triage",
+    "Escalation / resolution"
+   ],
+   "flownote": "Generic workflow. No company data, site identifiers or screenshots are shown.",
+   "body": "## Problem\nTelecom sites need continuous power and healthy network equipment. Faults have to be caught early from alarms and electrical parameters, before they become outages.\n## Work performed\n- Continuous remote monitoring of network and power infrastructure with Huawei U2000, Huawei OWS/ICTOM, RMS and Affectli, identifying alarms and abnormal operating conditions.\n- Monitoring voltage, current, temperature and equipment status for early fault detection and troubleshooting.\n- Field maintenance and troubleshooting of AC/DC power systems, rectifiers, batteries, UPS, ATS, generators and hybrid/solar systems.\n- Preventive and corrective maintenance with electrical measurements to find degradation before failure.\n- Monitoring generator energy consumption, forecasting diesel needs and optimising refilling schedules.",
+   "todo": "",
+   "evidence": [
+    [
+     "Employment letter or reference",
+     "",
+     "Optional, to verify dates and roles."
+    ]
+   ],
+   "featured": true
+  },
+  {
+   "id": "solar-tracker",
+   "type": "project",
+   "year": 2014,
+   "period": "2014 to 2016",
+   "title": "Dual-Axis Solar Tracking System",
+   "sub": "2014 to 2016.",
+   "tags": [
+    "Electronics",
+    "Renewable energy"
+   ],
+   "summary": "LDR sensing, comparators, H-bridge drivers and DC motors.",
+   "flow": [
+    "LDR sensors",
+    "Comparators",
+    "H-bridge drivers",
+    "DC motors",
+    "PV panel"
+   ],
+   "flownote": "",
+   "body": "## Description\nAn automatic dual-axis photovoltaic tracker. LDR sensors detect light, comparator circuits compare the signals, and H-bridge drivers run DC motors for bidirectional sun tracking.",
+   "todo": "",
+   "evidence": [
+    [
+     "Project document",
+     "https://drive.google.com/file/d/1AMhc0jtkbPT0Wf3xkc8TxEyKxGltNPBk/view",
+     ""
+    ],
+    [
+     "Circuit diagram",
+     "",
+     "Export the schematic."
+    ],
+    [
+     "Photographs / test data",
+     "",
+     "Real photographs and measurements only."
+    ]
+   ],
+   "featured": false
+  },
+  {
+   "id": "solar-garki",
+   "type": "project",
+   "year": 2023,
+   "period": "2023 to 2024",
+   "title": "Solar Energy Assessment, Garki II Abuja",
+   "sub": "2023 to 2024.",
+   "tags": [
+    "Renewable energy",
+    "Study"
+   ],
+   "summary": "Feasibility of solar as an answer to Nigeria's energy crisis.",
+   "flow": [],
+   "flownote": "",
+   "body": "## Description\nAn evaluation of solar energy as an alternative source, covering its benefits, feasibility, adoption challenges and contribution to addressing Nigeria's energy crisis in Garki II, Abuja Municipal Area Council.",
+   "todo": "",
+   "evidence": [
+    [
+     "Study document",
+     "https://drive.google.com/file/d/17IvGgP_kDOS4NvP3YHdEDc_cXv6rZ6pA/view",
+     ""
+    ],
+    [
+     "Survey data",
+     "",
+     "Add if it exists and holds no personal data."
+    ]
+   ],
+   "featured": false
+  },
+  {
+   "id": "pub-cv-2024",
+   "type": "publication",
+   "year": 2024,
+   "period": "",
+   "title": "Deep learning in computer vision: From object detection to automobile vehicles",
+   "sub": "Adekunle, Adebola, Effiong, **Lawal** (2024). IRJET 11(8), 301-312.",
+   "tags": [],
+   "links": [
+    [
+     "Publisher PDF",
+     "https://www.irjet.net/archives/V11/i8/IRJET-V11I845.pdf"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "pub-quantum",
+   "type": "publication",
+   "year": 2024,
+   "period": "",
+   "title": "Revolutionizing data science through quantum computing",
+   "sub": "Adekunle, **Lawal**, Sodipe, Osasona, Ani (2024). JSITR 5(9), 79-88.",
+   "tags": [],
+   "links": [
+    [
+     "Journal page",
+     "https://africanscholarpub.com/ajsitr/article/view/351/346"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "pub-drug",
+   "type": "publication",
+   "year": 2024,
+   "period": "",
+   "title": "The role of AI and ML in drug discovery and development",
+   "sub": "Adekunle, **Lawal**, Abiodun, Nwose, Faderin (2024). JAIAS 5(2), 43-54.",
+   "tags": [],
+   "links": [
+    [
+     "Journal page",
+     "https://africanscholarpub.com/ajaias/article/view/256"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "pub-brain",
+   "type": "publication",
+   "year": 2024,
+   "period": "",
+   "title": "Brain tumor detection system: Revolutionizing diagnosis with technology",
+   "sub": "Adekunle, Ike-Okpe, Abiodun, **Lawal**, Igweh (2024). IJHPS 5(3), 18-35.",
+   "tags": [],
+   "links": [
+    [
+     "Journal page",
+     "https://nightingalepublications.com/index.php/nijhrps/article/view/137"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "pub-plate",
+   "type": "publication",
+   "year": 2023,
+   "period": "",
+   "title": "Car plate number detection system using OpenCV",
+   "sub": "**Lawal** (2023). Journal of Science Technology and Education 11(3), 359-364. Sole author.",
+   "tags": [],
+   "links": [
+    [
+     "Paper on Drive",
+     "https://drive.google.com/file/d/12m-SijZX3FusoJCB2VRSjswtZNMFlJCx/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "pub-waste",
+   "type": "publication",
+   "year": 2023,
+   "period": "",
+   "title": "Design and construction of smart waste collection and management system",
+   "sub": "**Lawal** (2023). Journal of Science Technology and Education 11(3), 365-372. Sole author.",
+   "tags": [],
+   "links": [
+    [
+     "Paper on Drive",
+     "https://drive.google.com/file/d/1wsRH-typFSFoiLcqKpLOnfKbG0D477b2/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "evt-smart",
+   "type": "event",
+   "year": 2026,
+   "period": "Oct 2026",
+   "title": "Smart Materials and Automation for Sustainable Development, Vivekananda Global University",
+   "sub": "Paper: Computational Mechanics and Dynamic Simulation of Composite Robotic Links for Energy-Efficient Motion",
+   "tags": [],
+   "links": [
+    [
+     "Certificate",
+     "https://drive.google.com/file/d/1SOD-L_2AdVv_Z_78nFtbRzDWXIoHkDlP/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "evt-bootcamp",
+   "type": "event",
+   "year": 2026,
+   "period": "Sep 2026",
+   "title": "Research Writing, AI and Scientific Publication Bootcamp, Banasthali Vidyapith",
+   "sub": "Participation, three-day bootcamp",
+   "tags": [],
+   "links": [
+    [
+     "Certificate",
+     "https://drive.google.com/file/d/1pQb9uV_vR-bQdUdoHR8i0rdUDc2AOXhM/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "evt-workshop",
+   "type": "event",
+   "year": 2026,
+   "period": "Aug 2026",
+   "title": "Fourth Workshop on Applications of Computational Intelligence and Interactive Systems, Banasthali Vidyapith",
+   "sub": "Paper: Hybrid Physics-Informed ML Framework for EV Energy Consumption Estimation",
+   "tags": [],
+   "links": [
+    [
+     "Certificate",
+     "https://drive.google.com/file/d/1jsu03WWpxGevULTXljqhnjlNy1_GYFvZ/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "exp-ura",
+   "type": "experience",
+   "year": 2014,
+   "period": "Jun 2014 to Aug 2016",
+   "title": "Undergraduate Research Assistant",
+   "sub": "Control Lab, Zaria",
+   "tags": [],
+   "links": [],
+   "body": "- Evaluated microcontroller architectures, programmed the PIC16F877A, designed the circuit and fabricated the PCB for the door lock project.\n- Marked student lab exams and reports with feedback.",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "exp-field",
+   "type": "experience",
+   "year": 2018,
+   "period": "Mar 2018 to Aug 2022",
+   "title": "Field Support Engineer",
+   "sub": "IHS Towers of Strength, Abuja",
+   "tags": [],
+   "links": [],
+   "body": "- Maintained and troubleshot AC/DC power systems, rectifiers, batteries, UPS, ATS, generators and hybrid/solar systems.\n- Preventive and corrective maintenance with electrical measurements to identify degradation and prevent failures.\n- Monitored generator energy consumption, forecast diesel requirements and optimised refilling schedules.",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "exp-nsurv",
+   "type": "experience",
+   "year": 2022,
+   "period": "Sep 2022 to Nov 2024",
+   "title": "Network Surveillance Specialist",
+   "sub": "IHS Towers of Strength, Abuja",
+   "tags": [],
+   "links": [],
+   "body": "- Continuous remote monitoring of network and power infrastructure using Huawei U2000, OWS/ICTOM, RMS and Affectli.\n- Monitored voltage, current, temperature and equipment status to support early fault detection and troubleshooting.",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "exp-gra",
+   "type": "experience",
+   "year": 2025,
+   "period": "Aug 2025 to Aug 2026",
+   "title": "Graduate Research Assistant",
+   "sub": "Simulation and Software Lab, Jaipur",
+   "tags": [],
+   "links": [],
+   "body": "- Developed the hybrid physics-informed framework in the EV energy consumption project.\n- Assisted students with relay ladder logic and PLC communication lab exercises.",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "vol-ncdc",
+   "type": "volunteer",
+   "year": 2020,
+   "period": "2020 to 2022",
+   "title": "Volunteer software engineer, NCDC COVID-19 Response Unit, Nigeria",
+   "sub": "",
+   "tags": [],
+   "links": [],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "vol-frsc",
+   "type": "volunteer",
+   "year": 2022,
+   "period": "2022 to 2024",
+   "title": "IT Support, Federal Road Safety Corps",
+   "sub": "",
+   "tags": [],
+   "links": [],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-gre",
+   "type": "certificate",
+   "year": 2024,
+   "period": "",
+   "title": "GRE score report (Oct 2024)",
+   "sub": "",
+   "tags": [
+    "Test result"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1MM73iNOPJzZgXtpvQbbpLkP61fXofXCV/view?usp=drivesdk"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-cinci",
+   "type": "certificate",
+   "year": 2025,
+   "period": "",
+   "title": "Cincinnati Graduate Incentive Award letter (Jan 2025)",
+   "sub": "",
+   "tags": [
+    "Award"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1otPJCCi0S-vMiCqOk1GHTeJseDkGUgR6/view?usp=drivesdk"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-barau",
+   "type": "certificate",
+   "year": 2024,
+   "period": "",
+   "title": "Barau Scholarship Foundation award letter (Oct 2024)",
+   "sub": "",
+   "tags": [
+    "Award"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1YtCUnIK_OCYOAz3CFpukkCnEMA9p4Ut2/view?usp=drivesdk"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-smart",
+   "type": "certificate",
+   "year": 2026,
+   "period": "",
+   "title": "Smart Materials symposium, presentation certificate (Oct 2026)",
+   "sub": "",
+   "tags": [
+    "Conference"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1SOD-L_2AdVv_Z_78nFtbRzDWXIoHkDlP/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-boot",
+   "type": "certificate",
+   "year": 2026,
+   "period": "",
+   "title": "Research Writing, AI and Scientific Publication Bootcamp, participation (Sep 2026)",
+   "sub": "",
+   "tags": [
+    "Conference"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1pQb9uV_vR-bQdUdoHR8i0rdUDc2AOXhM/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-work",
+   "type": "certificate",
+   "year": 2026,
+   "period": "",
+   "title": "Fourth Workshop on Computational Intelligence, presentation certificate (Aug 2026)",
+   "sub": "",
+   "tags": [
+    "Conference"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1jsu03WWpxGevULTXljqhnjlNy1_GYFvZ/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-cv1",
+   "type": "certificate",
+   "year": "",
+   "period": "",
+   "title": "Coursera: Electric Vehicles and Mobility",
+   "sub": "",
+   "tags": [
+    "Course"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/14no_Ol8jSaTVDq2bgf6JqIJmezBvtw9R/view?pli=1"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-cv2",
+   "type": "certificate",
+   "year": "",
+   "period": "",
+   "title": "Coursera: People, Technology and the Future of Mobility",
+   "sub": "",
+   "tags": [
+    "Course"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1jSMveLlOs6jLzDRCuvVj8QzMe4M65Obh/view"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-cv3",
+   "type": "certificate",
+   "year": "",
+   "period": "",
+   "title": "Coursera: Renewable Energy Technology Fundamentals",
+   "sub": "",
+   "tags": [
+    "Course"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1MIP4RAztvZESCoRhZsAIInIg8Uo1PhMd/view?usp=drivesdk"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-coren",
+   "type": "certificate",
+   "year": 2023,
+   "period": "",
+   "title": "COREN membership certificate (2023 to present)",
+   "sub": "",
+   "tags": [
+    "Membership"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1Gna8d3lJAxqk-hNKRQ7nYsj4B4mXBWWU/view?usp=drivesdk"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-nse",
+   "type": "certificate",
+   "year": 2021,
+   "period": "",
+   "title": "NSE membership certificate (2021 to present)",
+   "sub": "",
+   "tags": [
+    "Membership"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/1ulgpKPTkaBiLze_5I959cII1Sojw5pU7/view?usp=drivesdk"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  },
+  {
+   "id": "c-iaeng",
+   "type": "certificate",
+   "year": 2021,
+   "period": "",
+   "title": "IAENG membership certificate (2021 to present)",
+   "sub": "",
+   "tags": [
+    "Membership"
+   ],
+   "links": [
+    [
+     "Open",
+     "https://drive.google.com/file/d/18TWpf1RPXLk9buXTc2Ss4XzaZ00XcBVY/view?usp=drivesdk"
+    ]
+   ],
+   "body": "",
+   "summary": "",
+   "flow": [],
+   "flownote": "",
+   "todo": "",
+   "evidence": [],
+   "featured": false
+  }
+ ]
+}
