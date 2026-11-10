@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* Layout: sticky top nav, single reading column (860px), hash-routed pages: overview, projects, research, experience, evidence, contact */
+:root{--bg:#FFFFFF;--surface:#F3F6FA;--fg:#1F2933;--muted:#5B6773;--line:#DCE4EC;--navy:#0B2545;--accent:#0A8FAE;--accent-soft:#E3F4F8;--warn-bg:#FFF6DD;--warn-line:#E0B84A;--warn-fg:#6B520F;--navfg:#FFFFFF;
+--display:'Space Grotesk',system-ui,sans-serif;--text:'Inter',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1520;--surface:#142131;--fg:#E3EAF1;--muted:#9AA9B8;--line:#26384B;--navy:#07101B;--accent:#3CC4E3;--accent-soft:#12303C;--warn-bg:#2B2410;--warn-line:#8A6D12;--warn-fg:#E8D08A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C1520;--surface:#142131;--fg:#E3EAF1;--muted:#9AA9B8;--line:#26384B;--navy:#07101B;--accent:#3CC4E3;--accent-soft:#12303C;--warn-bg:#2B2410;--warn-line:#8A6D12;--warn-fg:#E8D08A;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--text);font-size:16px;line-height:1.65;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin:0 calc(-1*max(16px,env(safe-area-inset-left,0px)));padding:10px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px))}
+.bar{max-width:860px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;color:var(--navy);text-decoration:none;font-size:17px;letter-spacing:.01em}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand{color:var(--fg)}}
+:root[data-theme="dark"] .brand{color:var(--fg)}
+nav{display:flex;gap:2px;overflow-x:auto;flex:1;min-width:0}
+nav a{padding:8px 12px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;border-bottom:2px solid transparent;white-space:nowrap}
+nav a[aria-current="page"]{color:var(--fg);border-bottom-color:var(--accent)}
+nav a:hover{color:var(--fg)}
+main{max-width:860px;margin:0 auto;padding-block:36px 56px}
+h1,h2,h3{font-family:var(--display);color:var(--navy);line-height:1.2;text-wrap:balance;margin:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h1,:root:not([data-theme="light"]) h2,:root:not([data-theme="light"]) h3{color:var(--fg)}}
+:root[data-theme="dark"] h1,:root[data-theme="dark"] h2,:root[data-theme="dark"] h3{color:var(--fg)}
+h1{font-size:clamp(30px,5vw,44px);font-weight:700}
+h2{font-size:22px;font-weight:600;margin-top:40px;margin-bottom:12px}
+h3{font-size:17px;font-weight:600;margin-top:24px;margin-bottom:6px}
+p{margin:0 0 12px;max-width:68ch}
+.lede{font-size:18px;color:var(--muted);max-width:60ch;margin-top:14px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px}
+.meta{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:14px}
+.card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;text-decoration:none;color:var(--fg);min-width:0}
+a.card:hover{border-color:var(--accent)}
+.card b{font-family:var(--display);color:var(--navy);display:block;margin-bottom:4px;font-size:16px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card b{color:var(--fg)}}
+:root[data-theme="dark"] .card b{color:var(--fg)}
+.card span{font-size:14px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-right:6px}
+.tag.ph{background:var(--warn-bg);color:var(--warn-fg);border:1px solid var(--warn-line)}
+.ph-box{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-fg);border-radius:8px;padding:10px 14px;font-size:14px;margin:12px 0}
+.tablewrap{overflow-x:auto;margin:10px 0 4px;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface);font-weight:600;color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+ul{padding-left:20px;margin:0 0 12px;max-width:68ch}li{margin-bottom:4px}
+.diagram{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.node{flex:1 1 110px;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px;font-size:13px;text-align:center}
+.node.hi{background:var(--navy);color:#fff;border-color:var(--navy)}
+.node.planned{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn-fg)}
+.node b{display:block;font-size:13px}
+.arrow{align-self:center;color:var(--accent);font-weight:700}
+.crumb{font-size:14px;margin-bottom:18px;display:block}
+.kv{display:grid;grid-template-columns:140px 1fr;gap:6px 16px;font-size:15px}
+.kv dt{color:var(--muted)}.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+button.copy{font:inherit;font-size:13px;margin-left:8px;padding:2px 10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:6px;cursor:pointer}
+footer{max-width:860px;margin:0 auto;border-top:1px solid var(--line);padding:18px 0 32px;font-size:13px;color:var(--muted)}
+@media (max-width:520px){.kv{grid-template-columns:1fr}.kv dt{margin-top:8px}}
+
+.yr{font-size:15px;color:var(--accent);font-weight:600;margin:34px 0 0}.yr+.grid,.yr+.tablewrap{margin-top:8px}</style></head><body>
+<header class="top"><div class="bar"><a class="brand" href="#overview" id="brand"></a><nav id="nav" aria-label="Sections"></nav></div></header>
+<main id="app"></main><footer id="foot"></footer>
+<script>
+let C;
+const E=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const I=s=>E(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+const U=u=>/^(https?:\/\/|uploads\/)/.test(u)?E(u):'#';
+const L=(u,t)=>`<a href="${U(u)}" target="_blank" rel="noopener">${I(t||'Open')}</a>`;
+const PH=t=>`<div class="ph-box"><b>To be added.</b> ${I(t)}</div>`;
+const tbl=(h,r)=>`<div class="tablewrap"><table><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${r.map(a=>`<tr>${a.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+function md(t){let o='',u=0;for(const l of (t||'').split('\n')){const b=l.startsWith('- ');if(u&&!b){o+='</ul>';u=0}if(b){if(!u){o+='<ul>';u=1}o+=`<li>${I(l.slice(2))}</li>`}else if(l.startsWith('## '))o+=`<h2>${I(l.slice(3))}</h2>`;else if(l.trim())o+=`<p>${I(l)}</p>`}return o+(u?'</ul>':'')}
+const yr=x=>parseInt(x.year)||9999;
+const ys=x=>yr(x)===9999?'Year to be added':String(parseInt(x.year));
+const sorted=t=>{const d=C.profile.order==='desc'?-1:1;return C.items.filter(x=>[].concat(t).includes(x.type)).sort((a,b)=>{const A=yr(a),B=yr(b);return A===B?0:A===9999?1:B===9999?-1:d*(A-B)})};
+const groups=l=>{const g=[];l.forEach(x=>{const y=ys(x);let e=g[g.length-1];if(!e||e[0]!==y)g.push(e=[y,[]]);e[1].push(x)});return g};
+const chain=f=>f&&f.length?`<div class="diagram">${f.map((x,i)=>`${i?'<span class="arrow" aria-hidden="true">&rarr;</span>':''}<div class="node">${E(x)}</div>`).join('')}</div>`:'';
+const evT=r=>tbl(['Evidence','Status','Source'],r.map(a=>[I(a[0]),a[1]?'<span class="tag">Linked</span>':'<span class="tag ph">To be added</span>',a[1]?L(a[1],'Open'):I(a[2])]));
+const card=p=>`<a class="card" href="#project-${E(p.id)}"><span class="meta">${E(p.period)}</span><b>${E(p.title)}</b><span>${E(p.summary)}</span><div style="margin-top:8px">${(p.tags||[]).map(t=>`<span class="tag${t==='Planned'?' ph':''}">${E(t)}</span>`).join('')}</div></a>`;
+const pages={
+overview:()=>{const p=C.profile;return `<div class="eyebrow">${E(p.eyebrow)}</div><h1>${E(p.name)}</h1><p class="lede">${I(p.lede)}</p><p>${I(p.intro)}</p>
+<h2>Selected projects</h2><div class="grid">${sorted('project').filter(x=>x.featured).map(card).join('')}</div><p style="margin-top:14px"><a href="#projects">All projects &rarr;</a></p>
+<h2>Education</h2>${tbl(['Degree','Institution','Period','Grade (per CV)'],(p.education||[]).map(r=>r.map(E)))}
+<h2>Skills</h2>${tbl(['Area','Tools'],(p.skills||[]).map(r=>r.map(E)))}
+<h2>Research interests</h2><ul>${(p.interests||[]).map(x=>`<li>${E(x)}</li>`).join('')}</ul>`},
+projects:()=>`<h1>Projects</h1><p class="lede">In order by year. Each project page has the problem, method and an evidence table. Missing evidence is marked.</p>${groups(sorted('project')).map(g=>`<h2 class="yr">${g[0]}</h2><div class="grid">${g[1].map(card).join('')}</div>`).join('')}`,
+research:()=>`<h1>Research</h1><p class="lede">Publications and conference or workshop events, in order by year.</p><h2>Publications</h2>${tbl(['Year','Title','Citation and authorship','Source'],sorted('publication').map(p=>[ys(p),E(p.title),I(p.sub),(p.links||[]).map(l=>L(l[1],l[0])).join(', ')]))}
+<p class="meta">DOIs are not in the CV and will be added. Authorship order is as published.</p>
+<h2>Conferences and workshops</h2>${tbl(['Date','Event','Output','Source'],sorted('event').map(p=>[E(p.period||ys(p)),E(p.title),E(p.sub),(p.links||[]).map(l=>L(l[1],l[0])).join(', ')]))}
+<p>Profile: ${L(C.profile.researchgate,'ResearchGate')}</p>`,
+experience:()=>`<h1>Experience</h1>${sorted('experience').map(x=>`<h2>${E(x.title)}</h2><p class="meta">${E(x.sub)}. ${E(x.period)}.</p>${md(x.body)}`).join('')}<h2>Volunteering</h2><ul>${sorted('volunteer').map(x=>`<li>${E(x.title)} (${E(x.period)})</li>`).join('')}</ul>`,
+evidence:()=>`<h1>Evidence library</h1><p class="lede">Certificates, awards and memberships, in order by year, each linked to the original document.</p>${tbl(['Year','Item','Type','Source'],sorted('certificate').map(c=>[ys(c),E(c.title),`<span class="tag">${E((c.tags||[])[0])}</span>`,(c.links||[]).map(l=>L(l[1],l[0])).join(', ')]))}`,
+contact:()=>{const p=C.profile;return `<h1>Contact</h1><dl class="kv" style="margin-top:20px"><dt>Name</dt><dd>${E(p.name)}</dd><dt>Email</dt><dd><span id="em">${E(p.email)}</span><button class="copy" id="cp" type="button">Copy</button></dd><dt>Location</dt><dd>${E(p.location)}</dd><dt>Research profile</dt><dd>${L(p.researchgate,'ResearchGate')}</dd></dl>`}};
+const NAV=[["overview","Overview"],["projects","Projects"],["research","Research"],["experience","Experience"],["evidence","Evidence"],["contact","Contact"]];
+function route(){let h=(location.hash||'#overview').slice(1),sec=h,app=document.getElementById('app');const p=h.startsWith('project-')&&C.items.find(x=>x.id===h.slice(8)&&x.type==='project');
+if(p){sec='projects';app.innerHTML=`<a class="crumb" href="#projects">&larr; All projects</a><h1>${E(p.title)}</h1><p class="meta" style="margin-top:12px">${E(p.sub)}</p>${chain(p.flow)}${p.flownote?`<p class="meta">${I(p.flownote)}</p>`:''}${md(p.body)}${p.todo?PH(p.todo):''}<h2>Evidence</h2>${evT(p.evidence||[])}`}
+else{if(!pages[h])sec=h='overview';app.innerHTML=pages[h]()}
+document.querySelectorAll('nav a').forEach(a=>a.dataset.p===sec?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+const cp=document.getElementById('cp');if(cp)cp.onclick=async()=>{try{await navigator.clipboard.writeText(document.getElementById('em').textContent);cp.textContent='Copied'}catch(e){cp.textContent='Select and copy'}};scrollTo(0,0)}
+fetch('data/content.json',{cache:'no-store'}).then(r=>r.json()).then(c=>{C=c;document.title=c.profile.name+' Portfolio';brand.textContent=c.profile.name;foot.textContent=c.profile.footer;nav.innerHTML=NAV.map(n=>`<a href="#${n[0]}" data-p="${n[0]}">${n[1]}</a>`).join('');addEventListener('hashchange',route);route()}).catch(()=>{app.textContent='Could not load data/content.json. Open this site through a web server or your hosting link, not by double-clicking the file.'});
+</script></body></html>
