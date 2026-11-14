@@ -145,47 +145,6 @@
    "featured": true
   },
   {
-   "id": "soc-estimation",
-   "type": "project",
-   "year": "",
-   "period": "Planned",
-   "title": "ML State-of-Charge Estimation: Cross-Cell Generalisation",
-   "sub": "Research topic: Cross-Cell Generalization of Machine-Learning State-of-Charge Estimation for Electric Vehicle Batteries.",
-   "tags": [
-    "Battery modelling",
-    "Planned"
-   ],
-   "summary": "Research question and planned pipeline. No results published yet.",
-   "flow": [
-    "LG 18650HG2: training",
-    "Preprocessing",
-    "ML SoC estimator",
-    "Panasonic 18650PF: validation",
-    "Metrics and plots"
-   ],
-   "flownote": "",
-   "body": "## Research question\nCan a machine-learning state-of-charge (SoC) estimator trained on one lithium-ion cell type stay accurate on a different cell type?\n## Planned datasets\n- **LG 18650HG2**: training and testing.\n- **Panasonic 18650PF**: cross-cell validation.\n## To document once the work exists\n- Input signals and how SoC ground truth is defined.\n- Temperatures and drive cycles in each dataset, and how they are split.\n- Models, hyperparameters and metrics on both cells.\n- Dataset sources, citations and licences.",
-   "todo": "No results yet. This page states the research question and planned pipeline only. It contains no metrics.",
-   "evidence": [
-    [
-     "Python source / notebooks",
-     "",
-     "Publish on GitHub."
-    ],
-    [
-     "Report or manuscript",
-     "",
-     "Upload PDF and link."
-    ],
-    [
-     "Metric table and plots",
-     "",
-     "Values from your own runs only."
-    ]
-   ],
-   "featured": true
-  },
-  {
    "id": "telecom-monitoring",
    "type": "project",
    "year": 2018,
